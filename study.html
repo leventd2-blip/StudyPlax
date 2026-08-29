@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyPlax | Study Session</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-mono flex flex-col min-h-screen">
+    <header class="border-b border-black p-6 flex justify-between items-center">
+        <a href="index.html" class="font-bold">&larr; EXIT SESSION</a>
+        <span class="text-sm">Card 1 of 24</span>
+    </header>
+    <main class="flex-grow flex flex-col items-center justify-center p-6">
+        <div id="flashcard" onclick="this.classList.toggle('flipped'); document.getElementById('card-text').innerText = this.classList.contains('flipped') ? 'Answer: O(N log N) or O(N^2) worst case depending on pivot selection.' : 'What is Time Complexity of QuickSort in the worst case?';" class="w-full max-w-xl h-80 border-2 border-black p-8 flex flex-col justify-between cursor-pointer shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-white relative transition-all">
+            <div class="flex justify-between text-xs font-bold border-b border-black pb-2">
+                <span>FRONT / BACK TOGGLE</span>
+                <span>CLICK CARD TO FLIP</span>
+            </div>
+            <div class="my-auto text-center">
+                <p id="card-text" class="text-2xl font-bold">What is Time Complexity of QuickSort in the worst case?</p>
+            </div>
+            <div class="text-xs text-center opacity-60">StudyPlax Engine v2.0</div>
+        </div>
+        <div class="flex space-x-4 mt-8">
+            <button onclick="nextCard('again')" class="border border-black px-6 py-3 font-bold hover:bg-black hover:text-white">AGAIN (1D)</button>
+            <button onclick="nextCard('good')" class="border border-black px-6 py-3 font-bold hover:bg-black hover:text-white">GOOD (3D)</button>
+            <button onclick="nextCard('easy')" class="border border-black px-6 py-3 font-bold hover:bg-black hover:text-white">EASY (7D)</button>
+        </div>
+    </main>
+    <script src="flashcard.js"></script>
+</body>
+</html>
