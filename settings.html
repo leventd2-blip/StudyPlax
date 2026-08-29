@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyPlax | Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-mono">
+    <header class="border-b border-black p-6 flex justify-between items-center">
+        <h1 class="text-2xl font-bold tracking-tighter">STUDYPLAX_SETTINGS</h1>
+        <nav class="space-x-6 text-sm">
+            <a href="index.html" class="hover:underline">Dashboard</a>
+            <a href="decks.html" class="hover:underline">Decks</a>
+            <a href="stats.html" class="hover:underline">Stats</a>
+            <a href="settings.html" class="underline">Settings</a>
+        </nav>
+    </header>
+    <main class="max-w-4xl mx-auto p-8 mt-12">
+        <h2 class="text-xl font-bold mb-6">PREFERENCES</h2>
+        <div class="border border-black p-6 space-y-4">
+            <div>
+                <label class="block font-bold mb-2">Daily New Card Limit</label>
+                <input type="number" value="20" class="border border-black p-2 w-full">
+            </div>
+            <div>
+                <label class="block font-bold mb-2">Spaced Repetition Algorithm</label>
+                <select class="border border-black p-2 w-full bg-white">
+                    <option>SuperMemo SM-2 (Default)</option>
+                    <option>FSRS-4.5</option>
+                </select>
+            </div>
+            <button onclick="alert('Settings Saved!')" class="border border-black px-6 py-2 font-bold hover:bg-black hover:text-white">SAVE CHANGES</button>
+        </div>
+    </main>
+</body>
+</html>
