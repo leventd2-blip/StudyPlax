@@ -5,39 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyPlax | Decks</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-black font-mono">
-    <header class="border-b border-black p-6 flex justify-between items-center">
-        <h1 class="text-2xl font-bold tracking-tighter">STUDYPLAX_DECKS</h1>
-        <nav class="space-x-6 text-sm">
+    <header class="border-b-4 border-black p-6 flex justify-between items-center bg-white">
+        <h1 class="text-2xl font-extrabold tracking-widest">STUDYPLAX_DECKS</h1>
+        <nav class="space-x-6 text-sm font-bold">
             <a href="index.html" class="hover:underline">Dashboard</a>
-            <a href="decks.html" class="underline">Decks</a>
+            <a href="decks.html" class="bg-black text-white px-3 py-1">Decks</a>
             <a href="stats.html" class="hover:underline">Stats</a>
             <a href="settings.html" class="hover:underline">Settings</a>
         </nav>
     </header>
     <main class="max-w-4xl mx-auto p-8 mt-12">
         <div class="flex justify-between items-center mb-8">
-            <h2 class="text-xl font-bold">YOUR DECKS</h2>
-            <a href="create.html" class="border border-black px-4 py-2 text-sm font-bold hover:bg-black hover:text-white">+ NEW CARD</a>
+            <h2 class="text-xl font-bold tracking-tight">MANAGE DECKS</h2>
+            <a href="create.html" class="border-2 border-black px-4 py-2 font-bold bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:bg-black hover:text-white transition-all">+ NEW CARD</a>
         </div>
-        <div class="grid grid-cols-1 gap-4">
-            <div class="border border-black p-6 flex justify-between items-center">
+        <div class="grid grid-cols-1 gap-6" id="deck-list">
+            <div class="border-4 border-black p-6 flex justify-between items-center shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
                 <div>
-                    <h3 class="font-bold text-lg">Advanced Algorithms</h3>
-                    <p class="text-xs opacity-70">45 cards &bull; Due today: 12</p>
+                    <h3 class="font-bold text-lg">Low-Poly Algorithms</h3>
+                    <p class="text-xs font-medium mt-1">45 cards &bull; Due today: 12</p>
                 </div>
-                <a href="study.html" class="border border-black px-4 py-2 text-sm hover:bg-black hover:text-white">Study</a>
+                <a href="study.html" class="border-2 border-black px-5 py-2 font-bold bg-black text-white hover:bg-white hover:text-black transition-all">Study</a>
             </div>
-            <div class="border border-black p-6 flex justify-between items-center">
+            <div class="border-4 border-black p-6 flex justify-between items-center shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
                 <div>
-                    <h3 class="font-bold text-lg">Machine Learning Fundamentals</h3>
-                    <p class="text-xs opacity-70">120 cards &bull; Due today: 12</p>
+                    <h3 class="font-bold text-lg">Neural Networks Core</h3>
+                    <p class="text-xs font-medium mt-1">120 cards &bull; Due today: 12</p>
                 </div>
-                <a href="study.html" class="border border-black px-4 py-2 text-sm hover:bg-black hover:text-white">Study</a>
+                <a href="study.html" class="border-2 border-black px-5 py-2 font-bold bg-black text-white hover:bg-white hover:text-black transition-all">Study</a>
             </div>
         </div>
     </main>
+    <script src="decks.js"></script>
 </body>
 </html>
