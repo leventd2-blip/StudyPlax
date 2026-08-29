@@ -1,7 +1,9 @@
-/* Brutalist / Minimalist Monochromatic Theme */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap');
+
 body {
     background-color: #ffffff;
     color: #000000;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 input, select, textarea {
@@ -9,10 +11,15 @@ input, select, textarea {
 }
 
 input:focus, select:focus, textarea:focus {
-    box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
 }
 
-.flipped {
+.mesh-flipped {
     background-color: #000000 !important;
     color: #ffffff !important;
+}
+
+.mesh-flipped #card-side-indicator {
+    color: #ffffff !important;
+    border-bottom-color: #ffffff !important;
 }
