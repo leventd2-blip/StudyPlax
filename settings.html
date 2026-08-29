@@ -5,34 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyPlax | Settings</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-black font-mono">
-    <header class="border-b border-black p-6 flex justify-between items-center">
-        <h1 class="text-2xl font-bold tracking-tighter">STUDYPLAX_SETTINGS</h1>
-        <nav class="space-x-6 text-sm">
+    <header class="border-b-4 border-black p-6 flex justify-between items-center bg-white">
+        <h1 class="text-2xl font-extrabold tracking-widest">STUDYPLAX_CONFIG</h1>
+        <nav class="space-x-6 text-sm font-bold">
             <a href="index.html" class="hover:underline">Dashboard</a>
             <a href="decks.html" class="hover:underline">Decks</a>
             <a href="stats.html" class="hover:underline">Stats</a>
-            <a href="settings.html" class="underline">Settings</a>
+            <a href="settings.html" class="bg-black text-white px-3 py-1">Settings</a>
         </nav>
     </header>
     <main class="max-w-4xl mx-auto p-8 mt-12">
-        <h2 class="text-xl font-bold mb-6">PREFERENCES</h2>
-        <div class="border border-black p-6 space-y-4">
+        <h2 class="text-xl font-bold mb-6 tracking-tight">SYSTEM PARAMETERS</h2>
+        <div class="border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-white space-y-6">
             <div>
-                <label class="block font-bold mb-2">Daily New Card Limit</label>
-                <input type="number" value="20" class="border border-black p-2 w-full">
+                <label class="block font-bold text-sm mb-2">Daily Card Limit Threshold</label>
+                <input type="number" id="limit-input" value="20" class="border-2 border-black p-3 w-full font-bold bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             </div>
             <div>
-                <label class="block font-bold mb-2">Spaced Repetition Algorithm</label>
-                <select class="border border-black p-2 w-full bg-white">
-                    <option>SuperMemo SM-2 (Default)</option>
-                    <option>FSRS-4.5</option>
+                <label class="block font-bold text-sm mb-2">Memory Algorithm</label>
+                <select id="algo-select" class="border-2 border-black p-3 w-full font-bold bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                    <option>SuperMemo SM-2 (Low-Poly Optimized)</option>
+                    <option>FSRS-4.5 Advanced Matrix</option>
                 </select>
             </div>
-            <button onclick="alert('Settings Saved!')" class="border border-black px-6 py-2 font-bold hover:bg-black hover:text-white">SAVE CHANGES</button>
+            <button onclick="saveSettings()" class="border-2 border-black px-8 py-3 font-extrabold bg-black text-white hover:bg-white hover:text-black transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">COMMIT CONFIG</button>
         </div>
     </main>
+    <script src="settings.js"></script>
 </body>
 </html>
