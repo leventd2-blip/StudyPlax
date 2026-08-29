@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyPlax | Decks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-mono">
+    <header class="border-b border-black p-6 flex justify-between items-center">
+        <h1 class="text-2xl font-bold tracking-tighter">STUDYPLAX_DECKS</h1>
+        <nav class="space-x-6 text-sm">
+            <a href="index.html" class="hover:underline">Dashboard</a>
+            <a href="decks.html" class="underline">Decks</a>
+            <a href="stats.html" class="hover:underline">Stats</a>
+            <a href="settings.html" class="hover:underline">Settings</a>
+        </nav>
+    </header>
+    <main class="max-w-4xl mx-auto p-8 mt-12">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-xl font-bold">YOUR DECKS</h2>
+            <a href="create.html" class="border border-black px-4 py-2 text-sm font-bold hover:bg-black hover:text-white">+ NEW CARD</a>
+        </div>
+        <div class="grid grid-cols-1 gap-4">
+            <div class="border border-black p-6 flex justify-between items-center">
+                <div>
+                    <h3 class="font-bold text-lg">Advanced Algorithms</h3>
+                    <p class="text-xs opacity-70">45 cards &bull; Due today: 12</p>
+                </div>
+                <a href="study.html" class="border border-black px-4 py-2 text-sm hover:bg-black hover:text-white">Study</a>
+            </div>
+            <div class="border border-black p-6 flex justify-between items-center">
+                <div>
+                    <h3 class="font-bold text-lg">Machine Learning Fundamentals</h3>
+                    <p class="text-xs opacity-70">120 cards &bull; Due today: 12</p>
+                </div>
+                <a href="study.html" class="border border-black px-4 py-2 text-sm hover:bg-black hover:text-white">Study</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
