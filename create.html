@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyPlax | Create Card</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-black font-mono">
-    <header class="border-b border-black p-6 flex justify-between items-center">
-        <h1 class="text-2xl font-bold tracking-tighter">STUDYPLAX_EDITOR</h1>
-        <a href="decks.html" class="text-sm underline">&larr; Back to Decks</a>
+    <header class="border-b-4 border-black p-6 flex justify-between items-center bg-white">
+        <h1 class="text-2xl font-extrabold tracking-widest">STUDYPLAX_EDITOR</h1>
+        <a href="decks.html" class="text-sm font-bold hover:underline">&larr; BACK TO DECKS</a>
     </header>
     <main class="max-w-4xl mx-auto p-8 mt-12">
-        <h2 class="text-xl font-bold mb-6">CREATE NEW FLASHCARD</h2>
-        <form onsubmit="event.preventDefault(); alert('Card created successfully!');" class="space-y-6">
+        <h2 class="text-xl font-bold mb-6 tracking-tight">COMPILE NEW MESH NODE</h2>
+        <form id="create-form" class="space-y-6 border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-white">
             <div>
-                <label class="block font-bold mb-2">Front (Question)</label>
-                <textarea rows="4" class="border border-black w-full p-4" placeholder="Enter question..."></textarea>
+                <label class="block font-bold text-sm mb-2">Front Vertex (Question)</label>
+                <textarea id="front-text" rows="4" class="border-2 border-black w-full p-4 font-medium shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]" placeholder="Enter front premise..." required></textarea>
             </div>
             <div>
-                <label class="block font-bold mb-2">Back (Answer)</label>
-                <textarea rows="4" class="border border-black w-full p-4" placeholder="Enter answer..."></textarea>
+                <label class="block font-bold text-sm mb-2">Back Vertex (Answer)</label>
+                <textarea id="back-text" rows="4" class="border-2 border-black w-full p-4 font-medium shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]" placeholder="Enter back resolution..." required></textarea>
             </div>
-            <button type="submit" class="border border-black px-8 py-3 font-bold hover:bg-black hover:text-white">SAVE CARD</button>
+            <button type="submit" class="border-2 border-black px-8 py-3 font-extrabold bg-black text-white hover:bg-white hover:text-black transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">BUILD AND SAVE NODE</button>
         </form>
     </main>
+    <script src="create.js"></script>
 </body>
 </html>
