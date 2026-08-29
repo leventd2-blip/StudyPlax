@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyPlax | Minimalist Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-mono">
+    <header class="border-b border-black p-6 flex justify-between items-center">
+        <h1 class="text-2xl font-bold tracking-tighter">STUDYPLAX_</h1>
+        <nav class="space-x-6 text-sm">
+            <a href="index.html" class="underline">Dashboard</a>
+            <a href="decks.html" class="hover:underline">Decks</a>
+            <a href="stats.html" class="hover:underline">Stats</a>
+            <a href="settings.html" class="hover:underline">Settings</a>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-8 mt-12">
+        <section class="border border-black p-8 mb-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+            <h2 class="text-xl font-bold mb-4">DAILY REVIEW QUEUE</h2>
+            <p class="text-sm mb-6 opacity-75">You have 24 cards due for spaced repetition today.</p>
+            <a href="study.html" class="inline-block border border-black px-6 py-3 font-bold hover:bg-black hover:text-white transition">START SESSION &rarr;</a>
+        </section>
+
+        <section class="grid grid-cols-2 gap-6">
+            <div class="border border-black p-6">
+                <h3 class="font-bold mb-2">Active Decks</h3>
+                <p class="text-3xl font-bold">12</p>
+            </div>
+            <div class="border border-black p-6">
+                <h3 class="font-bold mb-2">Retention Rate</h3>
+                <p class="text-3xl font-bold">94.8%</p>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
