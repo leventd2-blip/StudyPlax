@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyPlax | Create Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-mono">
+    <header class="border-b border-black p-6 flex justify-between items-center">
+        <h1 class="text-2xl font-bold tracking-tighter">STUDYPLAX_EDITOR</h1>
+        <a href="decks.html" class="text-sm underline">&larr; Back to Decks</a>
+    </header>
+    <main class="max-w-4xl mx-auto p-8 mt-12">
+        <h2 class="text-xl font-bold mb-6">CREATE NEW FLASHCARD</h2>
+        <form onsubmit="event.preventDefault(); alert('Card created successfully!');" class="space-y-6">
+            <div>
+                <label class="block font-bold mb-2">Front (Question)</label>
+                <textarea rows="4" class="border border-black w-full p-4" placeholder="Enter question..."></textarea>
+            </div>
+            <div>
+                <label class="block font-bold mb-2">Back (Answer)</label>
+                <textarea rows="4" class="border border-black w-full p-4" placeholder="Enter answer..."></textarea>
+            </div>
+            <button type="submit" class="border border-black px-8 py-3 font-bold hover:bg-black hover:text-white">SAVE CARD</button>
+        </form>
+    </main>
+</body>
+</html>
